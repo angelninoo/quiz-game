@@ -79,9 +79,24 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #333; /* Default text color */
+    font-size: 16px; /* Adjust text size */
 }
 
+/* Hover effect to darken the button */
 button:hover {
     opacity: 0.8;
+}
+
+/* For green (correct answer) */
+button[style*="background-color: green"] {
+    background-color: green;
+    color: white; /* Ensures the text stays visible */
+}
+
+/* For red (wrong answer) */
+button[style*="background-color: red"] {
+    background-color: red;
+    color: white; /* Ensures the text stays visible */
 }
