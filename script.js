@@ -45,22 +45,38 @@ function showQuestion(section) {
     if (questionData) {
         document.getElementById("question-title").textContent = questionData.question;
         const answers = document.getElementById("answers");
-        answers.innerHTML = "";
+        answers.innerHTML = ""; // Clear previous answers
         questionData.answers.forEach((answer, index) => {
             const button = document.createElement("button");
             button.textContent = answer;
-            button.onclick = () => checkAnswer(index + 1, questionData.correct);
+            button.onclick = () => checkAnswer(index + 1, questionData.correct, button, questionData);
             answers.appendChild(button);
         });
         document.getElementById("question-popup").style.display = "block";
     }
 }
 
-function checkAnswer(selected, correct) {
-    if (selected === correct) {
-        alert("Correct!");
-    } else {
-        alert("Wrong answer. Try again.");
-    }
-    document.getElementById("question-popup").style.display = "none";
+function checkAnswer(selected, correct, selectedButton, questionData) {
+    // Iterate over all buttons to disable them after an answer is selected
+    const buttons = document.querySelectorAll("#answers button");
+    buttons.forEach((button, index) => {
+        // Disable buttons after an answer is selected
+        button.disabled = true;
+        
+        // If the answer is correct, make the button green
+        if (index + 1 === correct) {
+            button.style.backgroundColor = "green";
+        }
+        // If the answer is wrong, make the button red
+        if (index + 1 === selected) {
+            button.style.backgroundColor = "red";
+        }
+    });
+
+    // Show the correct answer and feedback
+    setTimeout(() => {
+        alert(selected === correct ? "Correct!" : "Wrong answer. The correct answer is: " + questionData.answers[correct - 1]);
+        document.getElementById("question-popup").style.display = "none"; // Close the popup after a delay
+    }, 500); // Delay for showing feedback
 }
+
