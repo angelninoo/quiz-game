@@ -1,24 +1,51 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.screen {
-  display: none;
-  padding: 20px;
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.screen.active {
-  display: block;
+.category {
+    width: 20%;
+}
+
+.section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section:hover {
+    background-color: #ddd;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.popup-content {
+    text-align: center;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
 }
