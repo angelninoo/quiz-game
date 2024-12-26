@@ -2,7 +2,7 @@ const questions = {
     // Category 1
     1: {
         question: "What is the capital of France?",
-        answers: ["Berlin", "Madrid", "Paris", "Rome"],
+        answers: ["Berlin", "Kurdistan", "Paris", "Rome"],
         correct: 3
     },
     2: {
