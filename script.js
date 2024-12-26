@@ -60,18 +60,17 @@ function checkAnswer(selected, correct, selectedButton, questionData) {
     // Iterate over all buttons to disable them after an answer is selected
     const buttons = document.querySelectorAll("#answers button");
     buttons.forEach((button, index) => {
-        // Disable buttons after an answer is selected
-        button.disabled = true;
+        button.disabled = true; // Disable all buttons after answer is selected
         
-        // If the answer is correct, make the button green
+        // First, make the correct button green
         if (index + 1 === correct) {
             button.style.backgroundColor = "green";
-            button.style.color = "white";  // Ensuring text is visible
+            button.style.color = "white"; // Make sure the text stays visible
         }
-        // If the answer is wrong, make the button red
-        if (index + 1 === selected) {
+        // Then, make the selected wrong answer red
+        if (index + 1 === selected && index + 1 !== correct) {
             button.style.backgroundColor = "red";
-            button.style.color = "white";  // Ensuring text is visible
+            button.style.color = "white"; // Make sure the text stays visible
         }
     });
 
@@ -81,4 +80,3 @@ function checkAnswer(selected, correct, selectedButton, questionData) {
         document.getElementById("question-popup").style.display = "none"; // Close the popup after a delay
     }, 500); // Delay for showing feedback
 }
-
