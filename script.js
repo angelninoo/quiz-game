@@ -66,10 +66,12 @@ function checkAnswer(selected, correct, selectedButton, questionData) {
         // If the answer is correct, make the button green
         if (index + 1 === correct) {
             button.style.backgroundColor = "green";
+            button.style.color = "white";  // Ensuring text is visible
         }
         // If the answer is wrong, make the button red
         if (index + 1 === selected) {
             button.style.backgroundColor = "red";
+            button.style.color = "white";  // Ensuring text is visible
         }
     });
 
