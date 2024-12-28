@@ -69,38 +69,41 @@ function showQuestion(section) {
     }
 }
 
-function checkAnswer(selected, correct, selectedButton, questionData, section) {
-    // Iterate over all buttons to disable them after an answer is selected
+// Disable and grey out a section
+function disableSection(sectionId) {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+        sectionElement.style.backgroundColor = "#d3d3d3"; // Grey out the section
+        sectionElement.style.pointerEvents = "none"; // Disable further clicks
+        sectionElement.style.opacity = 0.5; // Make it look visually disabled
+        console.log(`Section ${sectionId} has been disabled.`);
+    } else {
+        console.error(`Section ${sectionId} not found.`);
+    }
+}
+
+// Check the answer and call disableSection
+function checkAnswer(selected, correct, selectedButton, questionData, sectionId) {
     const buttons = document.querySelectorAll("#answers button");
     buttons.forEach((button, index) => {
-        button.disabled = true; // Disable all buttons after answer is selected
-        
-        // First, make the correct button green
+        button.disabled = true;
         if (index + 1 === correct) {
             button.style.backgroundColor = "green";
-            button.style.color = "white"; // Make sure the text stays visible
+            button.style.color = "white";
         }
-        // Then, make the selected wrong answer red
-        if (index + 1 === selected && index + 1 !== correct) {
+        if (index + 1 === selected && selected !== correct) {
             button.style.backgroundColor = "red";
-            button.style.color = "white"; // Make sure the text stays visible
+            button.style.color = "white";
         }
     });
 
-    // Show the correct answer and feedback
     setTimeout(() => {
-        alert(selected === correct ? "Correct!" : "Wrong answer. The correct answer is: " + questionData.answers[correct - 1]);
-        document.getElementById("question-popup").style.display = "none"; // Close the popup after a delay
+        alert(selected === correct ? "Correct!" : "Wrong! The correct answer is: " + questionData.answers[correct - 1]);
+        document.getElementById("question-popup").style.display = "none";
         
-        // Disable and grey out the selected section
-        disableSection(section);
-    }, 500); // Delay for showing feedback
+        // Call disableSection here
+        disableSection(sectionId);
+    }, 500);
 }
-
-// Function to disable/grey out a section
-function disableSection(section) {
-    const sectionElement = document.getElementById("section-" + section); // Assuming each section has a unique ID like 'section-1'
-    sectionElement.style.backgroundColor = "#d3d3d3"; // Grey out the background color
-    sectionElement.style.pointerEvents = "none"; // Disable clicking (making it unclickable)
-    sectionElement.style.opacity = 0.5; // Optional: Make it look visually disabled
+sectionElement.style.opacity = 0.5; // Optional: Make it look visually disabled
 }
