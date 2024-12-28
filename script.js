@@ -53,21 +53,34 @@ window.addEventListener("beforeunload", function(event) {
 
 
 
-function showQuestion(section) {
-    const questionData = questions[section];
+function showQuestion(sectionId) {
+    const questionData = questions[sectionId];
     if (questionData) {
+        // Display the question
         document.getElementById("question-title").textContent = questionData.question;
+
+        // Display the answers
         const answers = document.getElementById("answers");
         answers.innerHTML = ""; // Clear previous answers
         questionData.answers.forEach((answer, index) => {
             const button = document.createElement("button");
             button.textContent = answer;
-            button.onclick = () => checkAnswer(index + 1, questionData.correct, button, questionData, section);
+            button.onclick = () => {
+                checkAnswer(index + 1, questionData.correct, button, questionData, sectionId);
+
+                // Grey out the section after the question is answered
+                disableSection(sectionId);
+            };
             answers.appendChild(button);
         });
+
+        // Show the question popup
         document.getElementById("question-popup").style.display = "block";
+    } else {
+        console.error(`No question data found for section: ${sectionId}`);
     }
 }
+
 
 // Disable and grey out a section
 function disableSection(sectionId) {
