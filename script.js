@@ -1,6 +1,6 @@
 const questions = {
     // Category 1
-    1: { question: "What is the capital of France?", answers: ["Berlin", "Kurdistan", "Paris", "Rome"], correct: 3 },
+    1: { question: "پایتەختی فەرەنسا چ شارێکە؟", answers: ["Berlin", "Kurdistan", "پاریس", "Rome"], correct: 3 },
     2: { question: "Which planet is known as the Red Planet?", answers: ["Earth", "Mars", "Jupiter", "Saturn"], correct: 2 },
     // Category 2
     6: { question: "What is 2 + 2?", answers: ["3", "4", "5", "6"], correct: 2 },
