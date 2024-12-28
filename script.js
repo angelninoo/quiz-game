@@ -39,6 +39,19 @@ const questions = {
     // Add more questions for Category 3
 };
 
+// Event listener to show a confirmation dialog when the user tries to refresh or leave the page
+window.addEventListener("beforeunload", function(event) {
+    // Customize the confirmation message
+    const confirmationMessage = "Are you sure you want to refresh or leave the page? Your progress will be lost.";
+    
+    // Standard behavior for most browsers
+    event.returnValue = confirmationMessage;
+    
+    // For older browsers that may not support the standard `returnValue` property
+    return confirmationMessage;
+});
+
+
 
 function showQuestion(section) {
     const questionData = questions[section];
@@ -49,14 +62,14 @@ function showQuestion(section) {
         questionData.answers.forEach((answer, index) => {
             const button = document.createElement("button");
             button.textContent = answer;
-            button.onclick = () => checkAnswer(index + 1, questionData.correct, button, questionData);
+            button.onclick = () => checkAnswer(index + 1, questionData.correct, button, questionData, section);
             answers.appendChild(button);
         });
         document.getElementById("question-popup").style.display = "block";
     }
 }
 
-function checkAnswer(selected, correct, selectedButton, questionData) {
+function checkAnswer(selected, correct, selectedButton, questionData, section) {
     // Iterate over all buttons to disable them after an answer is selected
     const buttons = document.querySelectorAll("#answers button");
     buttons.forEach((button, index) => {
@@ -78,5 +91,16 @@ function checkAnswer(selected, correct, selectedButton, questionData) {
     setTimeout(() => {
         alert(selected === correct ? "Correct!" : "Wrong answer. The correct answer is: " + questionData.answers[correct - 1]);
         document.getElementById("question-popup").style.display = "none"; // Close the popup after a delay
+        
+        // Disable and grey out the selected section
+        disableSection(section);
     }, 500); // Delay for showing feedback
+}
+
+// Function to disable/grey out a section
+function disableSection(section) {
+    const sectionElement = document.getElementById("section-" + section); // Assuming each section has a unique ID like 'section-1'
+    sectionElement.style.backgroundColor = "#d3d3d3"; // Grey out the background color
+    sectionElement.style.pointerEvents = "none"; // Disable clicking (making it unclickable)
+    sectionElement.style.opacity = 0.5; // Optional: Make it look visually disabled
 }
