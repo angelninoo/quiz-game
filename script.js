@@ -80,7 +80,24 @@ window.addEventListener("beforeunload", function (event) {
 function showQuestion(sectionId) {
     const questionData = questions[sectionId];
     if (questionData) {
-        document.getElementById("question-title").textContent = questionData.question;
+        const questionText = questionData.question;
+        const questionElement = document.getElementById("question-title");
+        questionElement.textContent = questionText;
+
+        // Check if the question contains Arabic characters
+        if (/[^\x00-\x7F]/.test(questionText)) {
+            // Set the question container to RTL
+            questionElement.setAttribute("dir", "rtl");
+
+            // Set the answers container to RTL
+            document.getElementById("answers").setAttribute("dir", "rtl");
+        } else {
+            // Set the question container to LTR (default for English)
+            questionElement.setAttribute("dir", "ltr");
+
+            // Set the answers container to LTR
+            document.getElementById("answers").setAttribute("dir", "ltr");
+        }
 
         const answers = document.getElementById("answers");
         answers.innerHTML = ""; // Clear previous answers
