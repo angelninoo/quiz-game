@@ -7,10 +7,10 @@ const questions = {
     5: { question: "What is the largest desert in the world?", answers: ["Sahara", "Gobi", "Kalahari", "Antarctica"], correct: 4 },
 
     // Series
-    6: { question: "What is 2 + 2?", answers: ["3", "4", "5", "6"], correct: 2 },
-    7: { question: "What is the largest ocean?", answers: ["Atlantic", "Indian", "Pacific", "Arctic"], correct: 3 },
-    8: { question: "How many days are in a leap year?", answers: ["365", "366", "364", "367"], correct: 2 },
-    9: { question: "What is the smallest continent?", answers: ["Australia", "Europe", "Antarctica", "South America"], correct: 1 },
+    6: { question: "ناوی ئەو قاوە خانەیە چی بوو کە لە  (Friends) کارەکتەرەکان زۆربەی کات لێی دا ئەنیشتن؟", answers: ["Central Perk", "Coffee Corner", "Java House", "Café Lounge"], correct: 1 },
+    7: { question: "لە زنجیرەی (The Office US) ناوی کۆمپانیای کاغەزی (Michael Scott)  چی بوو؟ ", answers: ["Dunder Mifflin", "Scranton Paper Co.", "Michael Scott Paper Company", "Sabre"], correct: 3 },
+    8: { question: "لە (Game Of Throne) کێ پاشای دوای دیوارەکان بوو (King Beyond the Wall)؟", answers: ["Tormund Giantsbane", "Mance Rayder", "Jon Snow", "Craste"], correct: 2 },
+    9: { question: "ناوی کۆتا هەلقەی (Breaking Bad) چی بوو؟", answers: ["Felina", "Ozymandias", "End Times", "Granite State"], correct: 1 },
     10: { question: "What is the chemical symbol for gold?", answers: ["Ag", "Au", "Pb", "Fe"], correct: 2 },
 
     // Movie
