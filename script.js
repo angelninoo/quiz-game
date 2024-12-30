@@ -11,7 +11,7 @@ const questions = {
     7: { question: "لە زنجیرەی (The Office US) ناوی کۆمپانیای کاغەزی (Michael Scott)  چی بوو؟ ", answers: ["Dunder Mifflin", "Scranton Paper Co.", "Michael Scott Paper Company", "Sabre"], correct: 3 },
     8: { question: "لە (Game Of Throne) کێ پاشای دوای دیوارەکان بوو (King Beyond the Wall)؟", answers: ["Tormund Giantsbane", "Mance Rayder", "Jon Snow", "Craste"], correct: 2 },
     9: { question: "ناوی کۆتا هەلقەی (Breaking Bad) چی بوو؟", answers: ["Felina", "Ozymandias", "End Times", "Granite State"], correct: 1 },
-    10: { question: "What is the chemical symbol for gold?", answers: ["Ag", "Au", "Pb", "Fe"], correct: 2 },
+    10: { question: "لە درامای (Arcane) ناوی کچەکەی(Marcus)  چیە؟", answers: ["Rina", "Ren", "Reyna", "Elle"], correct: 2 },
 
     // Movie
     11: { question: "Who wrote '1984'?", answers: ["George Orwell", "Aldous Huxley", "J.K. Rowling", "Mark Twain"], correct: 1 },
