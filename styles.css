@@ -112,6 +112,16 @@ button {
     font-size: 16px; /* Adjust text size */
 }
 
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* LTR text direction */
+[dir="ltr"] {
+    text-align: left;
+}
+
+
 /* Hover effect for buttons */
 button:hover {
     transform: translateY(-2px); /* Slight lift */
