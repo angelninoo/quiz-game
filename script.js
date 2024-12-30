@@ -1,6 +1,6 @@
 const questions = {
     // Anime
-    1: { question: "پایتەختی فەرەنسا چ شارێکە؟", answers: ["Berlin", "Kurdistan", "پاریس", "Rome"], correct: 3 },
+    1: { question: "ناوی ئەو قاوە خانەیە چی بوو کە لە  (Friends) کارەکتەرەکان زۆربەی کات لێی دا ئەنیشتن؟", answers: ["Central Perk", "Coffee Corner", "Java House", "Café Lounge"], correct: 1 },
     2: { question: "Which planet is closest to the sun?", answers: ["Earth", "Mars", "Mercury", "Venus"], correct: 3 },
     3: { question: "What is the boiling point of water in Celsius?", answers: ["0", "50", "100", "212"], correct: 3 },
     4: { question: "What is the currency of Japan?", answers: ["Dollar", "Euro", "Yen", "Won"], correct: 3 },
