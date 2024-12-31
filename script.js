@@ -17,8 +17,8 @@ const questions = {
     11: { question: "لە فلیمی سیمبا (The Lion King) ناوی باوکی سیمبا چیە؟", answers: ["Scar", "Mufasa", "Rafiki", "Timon"], correct: 2 },
     12: { question: "لە (Harry Poter) ناوی ئەو ئیلفە-قەزەمە چیە کە خزمەتی خێزانی مالفۆی ئەکات؟", answers: ["Kreacher", "Winky", "Dobby", "Hokey"], correct: 3 },
     13: { question: "لە فلیمی مصری (الفیل الازرق) ناوی هاوسەری دکتۆر یەحیا چیە؟", answers: ["لبنی", "فاتن", "نجلاء", "بسمة"], correct: 1 },
-    14: { question: "What is the largest mammal?", answers: ["Elephant", "Whale", "Giraffe", "Hippopotamus"], correct: 2 },
-    15: { question: "What is the freezing point of water in Fahrenheit?", answers: ["32", "0", "100", "212"], correct: 1 },
+    14: { question: "لە فلیمی (The Godfather) بەشی ٢ ناوی ئەو کارەکتەرە چیە کە خیانەت لە (Micheal Corleon) ئەکات لە دانیشتنی ئەنجومەنی پیران؟", answers: ["Carlo Rizzi", "Fredo Corleone", "Tom Hagen", "Frank Pentangeli"], correct: 4 },
+    15: { question: "لە فلیمی (الارهاب و الکەباب) ناوی ئەو باڵەخانە حکومیە چیە کە بارنتەکانی تیایا گیراوە؟", answers: ["مجمع التحرير", "دار القضاء العالي", "وزارة الداخلية", "مجلس الشعب"], correct: 1 },
 
     // Game
     16: { question: "Which element has the chemical symbol 'O'?", answers: ["Gold", "Oxygen", "Osmium", "Hydrogen"], correct: 2 },
