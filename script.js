@@ -28,46 +28,46 @@ const questions = {
     20: { question: "لە یاری (Elden Ring) کێ سەرکردەی (The Knights of the Roundtable Hold)ە؟", answers: ["Radagon", "Godfrey", "Marika", "Morgott"], correct: 2 },
 
     // Science
-    21: { question: "What is the tallest mountain in the world?", answers: ["K2", "Mount Everest", "Kilimanjaro", "Denali"], correct: 2 },
-    22: { question: "What gas do plants use for photosynthesis?", answers: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], correct: 2 },
-    23: { question: "What is the largest land animal?", answers: ["Giraffe", "Elephant", "Rhino", "Bear"], correct: 2 },
-    24: { question: "Which bird is known for its colorful feathers?", answers: ["Crow", "Peacock", "Penguin", "Owl"], correct: 2 },
-    25: { question: "How many legs does a spider have?", answers: ["6", "8", "10", "12"], correct: 2 },
+    21: { question: "هێمای کیمیای ئاو چیە؟", answers: ["O2", "CO2", "H2O", "N2"], correct: 3 },
+    22: { question: "چ توخمێک ژمارەی گەردیلەکانی ١ ە؟", answers: ["Helium", "Hydrogen", "Oxygen", "Nitrogen"], correct: 2 },
+    23: { question: "باوترین غاز لە کەشی زەویدا چیە؟", answers: ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"], correct: 2 },
+    24: { question: "چ توخمێک بەزۆری لە توێکڵی زەویدا هەیە؟", answers: ["Oxygen", "Silicon", "Iron", "Aluminum"], correct: 1 },
+    25: { question: "تاقیکردنەوەی بیرکردنەوە بەناوبانگەکەی شرۆدینگەر، کە پشیلەیەکی تێدایە، بۆ سەلماندنی چی کراوە؟", answers: ["The theory of relativity", "Quantum superposition", "The uncertainty principle", "The double-slit experiment"], correct: 2 },
 
     // General
-    26: { question: "Which country is known as the Land of the Rising Sun?", answers: ["China", "Korea", "Japan", "Vietnam"], correct: 3 },
-    27: { question: "What is the freezing point of water in Celsius?", answers: ["0", "32", "100", "-1"], correct: 1 },
-    28: { question: "What is the national language of China?", answers: ["Mandarin", "Cantonese", "Korean", "Japanese"], correct: 1 },
-    29: { question: "What is the main ingredient in bread?", answers: ["Flour", "Sugar", "Salt", "Water"], correct: 1 },
-    30: { question: "How many colors are in a rainbow?", answers: ["5", "6", "7", "8"], correct: 3 },
+    26: { question: "کام لەم ئاژەڵانە بە توانای گۆڕینی ڕەنگ ناسراوە؟", answers: ["Lion", "Chameleon", "Elephant", "Giraffe"], correct: 2 },
+    27: { question: "شانۆنامەی ڕۆمیۆ و جولیەت لە نوسینی کێیە؟", answers: ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"], correct: 1 },
+    28: { question: "گەورەترین وڵات لە ڕووی ڕووبەری زەویەوە کوێیە؟", answers: ["China", "United States", "Canada", "Russia"], correct: 4 },
+    29: { question: "کام وڵات زۆرترین زمانی فەرمی هەیە؟", answers: ["Switzerland", "India", "South Africa", "Canada"], correct: 3 },
+    30: { question: "لە ئەفسانەی یۆنانیدا کێ یەکەم ژن بوو کە خوداوەندەکان دروستیان کرد؟", answers: ["Hera", "Pandora", "Athena", "Demeter"], correct: 2 },
 
     // Culture
-    31: { question: "What is the primary language spoken in Brazil?", answers: ["Spanish", "Portuguese", "French", "English"], correct: 2 },
-    32: { question: "Which planet is the largest in the solar system?", answers: ["Jupiter", "Saturn", "Earth", "Neptune"], correct: 1 },
-    33: { question: "What is the capital of Canada?", answers: ["Toronto", "Vancouver", "Ottawa", "Montreal"], correct: 3 },
-    34: { question: "What is the process of water changing to vapor called?", answers: ["Condensation", "Evaporation", "Precipitation", "Boiling"], correct: 2 },
-    35: { question: "What is the largest internal organ in the human body?", answers: ["Liver", "Heart", "Lungs", "Kidney"], correct: 1 },
+    31: { question: "ئەو خواردنەوە عەرەبییە تەقلیدییە چییە کە زۆرجار لە مانگی ڕەمەزاندا پێشکەش دەکرێت؟", answers: ["قاوە ", "چا ", "شیری خەست", "قمر دین"], correct: 4 },
+    32: { question: "کام نووسەری ناوداری کورد بە ڕۆمانی مەم و زین ناسراوە کە بە یەکێک لە بەرهەمە گرنگەکانی ئەدەبی کوردی دادەنرێت؟", answers: ["Sherko Bekas", "Hafez", "Ahmed Arif", "Ahmad Khani"], correct: 4 },
+    33: { question: "کام نووسەری عەرەبی بە کتێبی پێغەمبەر ناسراوە کە لە سەرانسەری جیهاندا بۆ چەندین زمان وەرگێڕدراوە؟", answers: ["نجيب محفوظ", "خليل جبران", "محمود درويش", "علاء الأسواني"], correct: 2 },
+    34: { question: "کام ئایکۆن و شاعیر و فەیلەسوفی کورد بە پەیوەندی قووڵی بە ناسنامەی کوردەوە ناسراوە و ڕۆڵێکی بەرچاوی لە ناسیۆنالیزمی کوردیدا هەبووە؟", answers: ["عبدالله أوجلان", "شێركو بێكس", "فەدیل حوسەین", "کاوەی ئاسنگەر"], correct: 2 },
+    35: { question: "کام شاعیری بەناوبانگی عەرەبی بە یەکێک لە کاریگەرترین شاعیرەکانی جیهانی عەرەبیزم دادەنرێت، کە نووسەری موعەلەقات بوو؟", answers: ["رومي", "امرؤ القيس", "المتنبي", "عنترة بن شداد"], correct: 2 },
 
     // Language
-    36: { question: "Who painted the Mona Lisa?", answers: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"], correct: 2 },
-    37: { question: "What is the capital of Italy?", answers: ["Rome", "Venice", "Florence", "Milan"], correct: 1 },
-    38: { question: "What is the currency of the United Kingdom?", answers: ["Dollar", "Euro", "Pound", "Yen"], correct: 3 },
-    39: { question: "Which metal is used to make coins?", answers: ["Iron", "Copper", "Silver", "Gold"], correct: 2 },
-    40: { question: "What is the study of stars called?", answers: ["Biology", "Astronomy", "Geology", "Physics"], correct: 2 },
+    36: { question: "زمانی فەرمی بەڕازیل چییە؟", answers: ["Spanish", "Portuguese", "French", "Italian"], correct: 2 },
+    37: { question: "بە پلەی یەکەم لە ویلایەتی تامیل نادو لە هیندستان بە کام زمان قسە دەکرێت؟", answers: ["Hindi", "Bengali", "Tamil", "Telugu"], correct: 3 },
+    38: { question: "وشەی تورکی (Çalışmak) مانای چییە؟", answers: ["To sleep", "To work", "To eat", "To write"], correct: 2 },
+    39: { question: "زمانی فەرمی شاری ڤاتیکان چییە؟", answers: ["Italian", "Latin", "Spanish", "French"], correct: 2 },
+    40: { question: "دەگمەنترین زمانی فەرمی کە کۆمەڵگەیەکی بچووک لە ئەمریکای باشوور قسەی پێدەکات و زۆربەیان لە ناوچەی پاراگوایدا قسەی پێدەکەن چییە؟", answers: ["Guaraní", "Quechua", "Aymara", "Mapudungun"], correct: 1 },
 
     // Religions
-    41: { question: "Which animal is known as the King of the Jungle?", answers: ["Tiger", "Elephant", "Lion", "Cheetah"], correct: 3 },
-    42: { question: "What is the smallest prime number?", answers: ["1", "2", "3", "5"], correct: 2 },
-    43: { question: "What is the capital of Spain?", answers: ["Madrid", "Barcelona", "Seville", "Granada"], correct: 1 },
-    44: { question: "How many planets are in the solar system?", answers: ["7", "8", "9", "10"], correct: 2 },
-    45: { question: "Which is the longest river in the world?", answers: ["Amazon", "Nile", "Yangtze", "Mississippi"], correct: 2 },
+    41: { question: "کام مانگ لە ساڵنامەی ئیسلامیدا بە ڕۆژووگرتن لە کاتی ڕۆژدا ناسراوە؟", answers: ["Shawwal", "Ramadan", "Dhul-Hijjah", "Muharram"], correct: 2 },
+    42: { question: "کام فریشتە قورئانی گەیاندە دەست پێغەمبەر محمد؟", answers: ["Jibril", "Mikail", "Israfil", "Azrael"], correct: 1 },
+    43: { question: "کام هاوەڵی پێغەمبەر محمد بە کۆکردنەوەی قورئان بۆ یەک کتێب ناسراوە؟", answers: ["Umar ibn al-Khattab", "Abu Bakr", "Uthman ibn Affan", "Ali ibn Abi Talib"], correct: 3 },
+    44: { question: "کام زانای ئیسلامی بە کۆکردنەوەی بەناوبانگترین کۆمەڵەی فەرموودەکان شانازیی پێدەکرێت؟", answers: ["Imam Malik", "Imam Abu Hanifa", " Imam Ahmad ibn Hanbal", "Imam Bukhari"], correct: 4 },
+    45: { question: "لە ئیسلامدا کام شەڕ بە یەکەم ململانێی سەربازی گەورەی نێوان موسڵمانانی مەدینە و قوڕەیشی مەککە دادەنرێت؟", answers: ["شەڕی بەدر", "شەڕی ئوحود", "شەڕی خەیبەر", "شەڕی خەندەق"], correct: 1 },
 
     // History
-    46: { question: "What is the speed of light?", answers: ["3 x 10^8 m/s", "1 x 10^6 m/s", "5 x 10^7 m/s", "7 x 10^5 m/s"], correct: 1 },
-    47: { question: "Who discovered gravity?", answers: ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"], correct: 2 },
-    48: { question: "What is the primary source of energy for Earth?", answers: ["Wind", "Sun", "Coal", "Water"], correct: 2 },
-    49: { question: "What is the capital of Russia?", answers: ["Moscow", "St. Petersburg", "Kazan", "Sochi"], correct: 1 },
-    50: { question: "Which gas is most abundant in Earth's atmosphere?", answers: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], correct: 3 },
+    46: { question: "یەکەم سەرۆکی ئەمریکا کێ بوو؟", answers: ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "J F Kennedy"], correct: 1 },
+    47: { question: "کام شارستانیەتی کۆن بە پەرەپێدانی یەکەم سیستەمی نووسین ناسراوە کە میخییە؟", answers: ["Egyptians", "Sumerians", "Persians", "Greeks"], correct: 2 },
+    48: { question: "کەشتی تایتانیک لە کام ساڵدا نوقم بوو؟", answers: ["1905", "1920", "1898", "1912"], correct: 4 },
+    49: { question: "دوایین ئیمپراتۆری ئیمپراتۆریەتی ڕۆمانی لە ڕۆژئاوا کێ بوو؟", answers: ["Julius Caesar", "Romulus Augustulus", "Constantine I", "Nero"], correct: 2 },
+    50: { question: "یەکەم وڵات کام وڵات مافی دەنگدانی بە ژنان بەخشی؟", answers: ["United States", "New Zealand", "United Kingdom", "Australia"], correct: 2 },
 };
 
 // Add a confirmation dialog to prevent accidental refreshes
@@ -142,7 +142,7 @@ function checkAnswer(selected, correct, selectedButton, questionData, sectionId)
     });
 
     setTimeout(() => {
-        alert(selected === correct ? "Correct!" : `Wrong! The correct answer is: ${questionData.answers[correct - 1]}`);
+        alert(selected === correct ? "ئەی دەست خۆش باشە" : `ئافەرم دەرنەچویت`);
         document.getElementById("question-popup").style.display = "none";
         disableSection(sectionId); // Disable section after question is answered
     }, 500);
