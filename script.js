@@ -14,9 +14,9 @@ const questions = {
     10: { question: "لە درامای (Arcane) ناوی کچەکەی(Marcus)  چیە؟", answers: ["Rina", "Ren", "Reyna", "Elle"], correct: 2 },
 
     // Movie
-    11: { question: "Who wrote '1984'?", answers: ["George Orwell", "Aldous Huxley", "J.K. Rowling", "Mark Twain"], correct: 1 },
-    12: { question: "What is the square root of 16?", answers: ["2", "3", "4", "5"], correct: 3 },
-    13: { question: "Which organ pumps blood in the human body?", answers: ["Liver", "Heart", "Lungs", "Kidney"], correct: 2 },
+    11: { question: "لە فلیمی سیمبا (The Lion King) ناوی باوکی سیمبا چیە؟", answers: ["Scar", "Mufasa", "Rafiki", "Timon"], correct: 2 },
+    12: { question: "لە (Harry Poter) ناوی ئەو ئیلفە-قەزەمە چیە کە خزمەتی خێزانی مالفۆی ئەکات؟", answers: ["Kreacher", "Winky", "Dobby", "Hokey"], correct: 3 },
+    13: { question: "لە فلیمی مصری (الفیل الازرق) ناوی هاوسەری دکتۆر یەحیا چیە؟", answers: ["لبنی", "فاتن", "نجلاء", "بسمة"], correct: 1 },
     14: { question: "What is the largest mammal?", answers: ["Elephant", "Whale", "Giraffe", "Hippopotamus"], correct: 2 },
     15: { question: "What is the freezing point of water in Fahrenheit?", answers: ["32", "0", "100", "212"], correct: 1 },
 
