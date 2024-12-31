@@ -21,11 +21,11 @@ const questions = {
     15: { question: "لە فلیمی (الارهاب و الکەباب) ناوی ئەو باڵەخانە حکومیە چیە کە بارنتەکانی تیایا گیراوە؟", answers: ["مجمع التحرير", "دار القضاء العالي", "وزارة الداخلية", "مجلس الشعب"], correct: 1 },
 
     // Game
-    16: { question: "Which element has the chemical symbol 'O'?", answers: ["Gold", "Oxygen", "Osmium", "Hydrogen"], correct: 2 },
-    17: { question: "What is the capital of Germany?", answers: ["Berlin", "Munich", "Frankfurt", "Hamburg"], correct: 1 },
-    18: { question: "Which country is famous for the Eiffel Tower?", answers: ["Italy", "Spain", "France", "USA"], correct: 3 },
-    19: { question: "What is the hardest natural substance?", answers: ["Gold", "Iron", "Diamond", "Graphite"], correct: 3 },
-    20: { question: "What is the name of Earth's only natural satellite?", answers: ["Moon", "Mars", "Venus", "Sun"], correct: 1 },
+    16: { question: "لە (Super Mario Bros) ناوی ئەوشازادەیە چیە کە ماریۆ ئەیەویت ڕزگاری بکات؟", answers: ["Daisy", "Rosalina", "Peach", "Zelda"], correct: 3 },
+    17: { question: "لە (Minecraft) پێویستت بە چ ماتریەلێک هەیە بۆ دروست کردنی (Nether Portal)؟", answers: ["Obsidian", "Bedrock", "Bedrock", "Quartz"], correct: 1 },
+    18: { question: "لە یاری (Dark Souls) ناوی یەکەم (Boss) چیە کە شەری لەگەڵ ئەکەیت؟", answers: ["Asylum Demon", "Gargoyles", "Capra Demon", "Artorias"], correct: 1 },
+    19: { question: "لە (Witcher 3:Wild Hunt) ناوی ئەسپەکەی جیرالت چیە؟", answers: ["Silver", "Carrot", "Blaze", "Roach"], correct: 4 },
+    20: { question: "لە یاری (Elden Ring) کێ سەرکردەی (The Knights of the Roundtable Hold)ە؟", answers: ["Radagon", "Godfrey", "Marika", "Morgott"], correct: 2 },
 
     // Science
     21: { question: "What is the tallest mountain in the world?", answers: ["K2", "Mount Everest", "Kilimanjaro", "Denali"], correct: 2 },
