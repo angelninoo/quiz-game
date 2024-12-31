@@ -1,10 +1,10 @@
 const questions = {
     // Anime
-    1: { question: "ناوی ئەو قاوە خانەیە چی بوو کە لە  (Friends) کارەکتەرەکان زۆربەی کات لێی دا ئەنیشتن؟", answers: ["Central Perk", "Coffee Corner", "Java House", "Café Lounge"], correct: 1 },
-    2: { question: "Which planet is closest to the sun?", answers: ["Earth", "Mars", "Mercury", "Venus"], correct: 3 },
-    3: { question: "What is the boiling point of water in Celsius?", answers: ["0", "50", "100", "212"], correct: 3 },
-    4: { question: "What is the currency of Japan?", answers: ["Dollar", "Euro", "Yen", "Won"], correct: 3 },
-    5: { question: "What is the largest desert in the world?", answers: ["Sahara", "Gobi", "Kalahari", "Antarctica"], correct: 4 },
+    1: { question: "لە (Fairy Tail) ناوی ئەو کارەکتەرە سەرەکیە چیە کە (Celestial Spirit Mage) ە؟", answers: ["Natsu Dragneel", "Erza Scarlet", "Lucy Heartfilia", "Gray Fullbuster"], correct: 3 },
+    2: { question: "لە (Death Note) ئەو خواردنەی (L) زۆری حەز لێیە چیە؟", answers: ["Ice Cream", "Cake", "Strawberries", "Chocolate"], correct: 2 },
+    3: { question: "لە (Tokyo Ghoul) ناوی ئەو قاوەخانەیە چیە کە غولەکان بەڕێوەی ئەبەن؟", answers: ["Anteiku", "Kaneki's Café", "Aogiri Tree", "Black Goat"], correct: 1 },
+    4: { question: "لە (Neon Genesis Evangelion)  ناوی فەرمی یونتەکەی (Shinji’s Eva) چیە؟", answers: ["Unit-00", "Unit-01", "Unit-02", "Unit-03"], correct: 2 },
+    5: { question: "لە (Steins;Gate) ناوی تەواوی (Lab Member 004) چیە؟", answers: ["Kurisu Makise", "Suzuha Amane", "Moeka Kiryu", "Luka Urushibara"], correct: 1 },
 
     // Series
     6: { question: "ناوی ئەو قاوە خانەیە چی بوو کە لە  (Friends) کارەکتەرەکان زۆربەی کات لێی دا ئەنیشتن؟", answers: ["Central Perk", "Coffee Corner", "Java House", "Café Lounge"], correct: 1 },
